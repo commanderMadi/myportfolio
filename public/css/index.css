@@ -93,21 +93,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes wordchange {
-    0% {
-        content: "Front-end Web Developer";
-    }
-    33.33333% {
-        content: "PC Video Gamer";
-    }
-    66.66666% {
-        content: "Starwars Fan";
-    }
-    100% {
-        content: "Front-end Web Developer";
-    }
-}
-/*** Support for vendors ***/
+/*** CSS Animation Support for vendors ***/
 @-webkit-keyframes wordchange {
     0% {
         content: "Front-end Web Developer";
@@ -124,6 +110,21 @@ body {
 }
 
 @-moz-keyframes wordchange {
+    0% {
+        content: "Front-end Web Developer";
+    }
+    33.33333% {
+        content: "PC Video Gamer";
+    }
+    66.66666% {
+        content: "Starwars Fan";
+    }
+    100% {
+        content: "Front-end Web Developer";
+    }
+}
+
+@keyframes wordchange {
     0% {
         content: "Front-end Web Developer";
     }
