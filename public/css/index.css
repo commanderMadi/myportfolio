@@ -86,19 +86,25 @@ body {
 /*** Animations ***/
 
 #dev-desc:after {
-    content: "Front-End Developer";
+    content: "Front-End Web Developer";
     animation-name: wordchange;
     animation-duration: 5s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
 
 @keyframes wordchange {
-    50% {
-        content: "PC Video Gamer"
+    0% {
+        content: "Front-end Web Developer";
+    }
+    33.33333% {
+        content: "PC Video Gamer";
+    }
+    66.66666% {
+        content: "Starwars Fan";
     }
     100% {
-        content: "Starwars Fan"
+        content: "Front-end Web Developer";
     }
 }
 
