@@ -86,7 +86,7 @@ body {
 /*** Animations ***/
 
 #dev-desc:after {
-    content: "";
+    content: "Front-End Developer";
     animation-name: wordchange;
     animation-duration: 5s;
     animation-timing-function: linear;
@@ -94,9 +94,6 @@ body {
 }
 
 @keyframes wordchange {
-    0% {
-        content: "Front-End Developer";
-    }
     50% {
         content: "PC Video Gamer"
     }
