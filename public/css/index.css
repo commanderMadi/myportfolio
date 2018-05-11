@@ -1,0 +1,149 @@
+html,
+body {
+    height: 100%;
+}
+
+#hero {
+    background-image: url("../img/coffee-code.jpg");
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+#hero .container-fluid {
+    position: relative;
+    top: 50%;
+}
+
+#intro {
+    font-family: "Coda", "Arial", sans-serif;
+}
+
+#about-me img {
+    width: 400px;
+    height: 400px;
+}
+
+#about-me h1 {
+    padding: 1rem;
+}
+
+#projects h1 {
+    padding: 1em;
+}
+
+#projects .card {
+    width: 25rem;
+}
+
+#projects .card-img-top {
+    width: 318px;
+    height: 321px;
+}
+
+#skills h1 {
+    padding: 1rem;
+}
+
+#skills p {
+    padding-top: 1rem;
+}
+
+#contact h1 {
+    padding-top: 1rem;
+}
+
+/***** Semantics *****/
+
+.bg-grey {
+    background-color: #f7f7f7;
+}
+
+/* Progress bars widths */
+
+.htmlpb {
+    width: 95%;
+}
+
+.csspb {
+    width: 90%;
+}
+
+.jspb {
+    width: 75%;
+}
+
+.jqpb {
+    width: 60%;
+}
+
+.njpb {
+    width: 25%;
+}
+
+/*** Animations ***/
+
+#dev-desc:after {
+    content: "";
+    animation-name: wordchange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wordchange {
+    0% {
+        content: "Front-End Developer";
+    }
+    50% {
+        content: "PC Video Gamer"
+    }
+    100% {
+        content: "Starwars Fan"
+    }
+}
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 576px) {
+    #intro {
+        font-size: 2rem !important;
+    }
+    #subintro,
+    #dev-desc {
+        font-size: 1.5rem !important;
+    }
+    #about-me h1 {
+        font-size: 2.5rem;
+    }
+    #about-me p {
+        font-size: 1rem;
+        text-align: left !important;
+        padding: 1rem;
+    }
+    #projects h1 {
+        font-size: 2.5rem;
+    }
+    #skills h1 {
+        font-size: 2.5rem;
+    }
+    #copyright {
+        font-size: 1rem;
+    }
+    #get-in-touch {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 768px) {}
+
+@media all and (max-width: 992px) {
+    #hero {
+        background-size: cover;
+    }
+    #projects .card {
+        width: 35rem;
+    }
+}
