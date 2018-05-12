@@ -9,13 +9,8 @@ body {
     opacity: 1;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #f7f7f7;
 }
-
-/* #hero .container-fluid {
-    position: relative;
-    top: 50%;
-} */
 
 #intro {
     font-family: "Coda", "Arial", sans-serif;
@@ -26,7 +21,7 @@ body {
     height: 400px;
 }
 
-#about-me h1 {
+#about-me-heading {
     padding: 1rem;
 }
 
@@ -91,69 +86,28 @@ body {
     width: 25%;
 }
 
-/*** Animations ***/
+/**** CSS Animations *****/
 
-#dev-desc:after {
-    content: "Front-End Web Developer";
-    -webkit-animation-name: wordchange;
-    -moz-animation-name: wordchange;
-    animation-name: wordchange;
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-timing-function: ease;
-    -moz-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+.anim.slide-left {
+    opacity: 0;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(-30rem, 0px, 0px);
+    -webkit-transform: translate3d(-30rem, 0px, 0px);
+    -o-transform: translate(-30rem, 0px);
+    -ms-transform: translate(-30rem, 0px);
+    transform: translate3d(-30rem, 0px, 0px);
 }
 
-/*** CSS Animation Support for vendors ***/
-
-@-webkit-keyframes wordchange {
-    0% {
-        content: "Front-end Web Developer";
-    }
-    33.33333% {
-        content: "PC Video Gamer";
-    }
-    66.66666% {
-        content: "Starwars Fan";
-    }
-    100% {
-        content: "Front-end Web Developer";
-    }
-}
-
-@-moz-keyframes wordchange {
-    0% {
-        content: "Front-end Web Developer";
-    }
-    33.33333% {
-        content: "PC Video Gamer";
-    }
-    66.66666% {
-        content: "Starwars Fan";
-    }
-    100% {
-        content: "Front-end Web Developer";
-    }
-}
-
-@keyframes wordchange {
-    0% {
-        content: "Front-end Web Developer";
-    }
-    33.33333% {
-        content: "PC Video Gamer";
-    }
-    66.66666% {
-        content: "Starwars Fan";
-    }
-    100% {
-        content: "Front-end Web Developer";
-    }
+.anim.slide-left.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
 }
 
 /***** MEDIA QUERIES *****/
@@ -162,7 +116,7 @@ body {
     #intro-text {
         font-size: 2.5rem !important;
     }
-    #dev-desc {
+    #intro-subtext {
         font-size: 1.3rem !important;
     }
     #about-me h1 {
