@@ -12,10 +12,10 @@ body {
     color: #fff;
 }
 
-#hero .container-fluid {
+/* #hero .container-fluid {
     position: relative;
     top: 50%;
-}
+} */
 
 #intro {
     font-family: "Coda", "Arial", sans-serif;
@@ -102,6 +102,7 @@ body {
 }
 
 /*** CSS Animation Support for vendors ***/
+
 @-webkit-keyframes wordchange {
     0% {
         content: "Front-end Web Developer";
@@ -150,12 +151,11 @@ body {
 /***** MEDIA QUERIES *****/
 
 @media all and (max-width: 576px) {
-    #intro {
-        font-size: 2rem !important;
+    #intro-text {
+        font-size: 2.5rem !important;
     }
-    #subintro,
     #dev-desc {
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
     }
     #about-me h1 {
         font-size: 2.5rem;
@@ -180,8 +180,11 @@ body {
 }
 
 @media all and (max-width: 992px) {
-    #hero {
-        background-size: cover;
+    #intro-text {
+        font-size: 4rem;
+    }
+    #intro-subtext {
+        font-size: 2.5rem;
     }
     #projects .card {
         width: 35rem;
