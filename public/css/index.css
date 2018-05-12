@@ -51,6 +51,10 @@ body {
     padding-top: 1rem;
 }
 
+#contact .row {
+    width: 20vh;
+}
+
 #get-in-touch {
     padding-top: 1rem;
 }
