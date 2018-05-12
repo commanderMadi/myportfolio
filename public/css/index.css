@@ -51,8 +51,12 @@ body {
     padding-top: 1rem;
 }
 
-#contact h1 {
+#get-in-touch {
     padding-top: 1rem;
+}
+
+#copyright {
+    padding-top: 2rem !important;
 }
 
 /***** Semantics *****/
