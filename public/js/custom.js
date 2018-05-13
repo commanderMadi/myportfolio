@@ -5,7 +5,7 @@
 $(function () { //On Document Ready
 
     //Logic to slide elements on scrolling
-
+    // Functionality from sitepoint
     let $animation_elements = $('.anim');
     let $window = $(window);
 
@@ -23,10 +23,7 @@ $(function () { //On Document Ready
             //check to see if this current container is within viewport
             if ((element_bottom_position >= window_top_position) &&
                 (element_top_position <= window_bottom_position)) {
-                $element.addClass('in-view');
-
-            } else {
-                $element.removeClass('in-view');
+                $element.addClass("in-view");
             }
         });
     }
