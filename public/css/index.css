@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     letter-spacing: .15em;
-    animation: typing 1.5s steps(40, end);
+    animation: typing 4.5s steps(40, end);
 }
 
 #about-me img {
