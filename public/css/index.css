@@ -5,6 +5,8 @@ body {
 
 #hero {
     background-image: url("../img/coffee-code.jpg");
+    background-color: rgb(41, 41, 41);
+    background-color: rgba(41, 41, 41, 1);
     background-size: cover;
     opacity: 1;
     width: 100%;
@@ -14,6 +16,14 @@ body {
 
 #intro {
     font-family: "Coda", "Arial", sans-serif;
+}
+
+#intro-subtext {
+    display: inline-block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(40, end);
 }
 
 #about-me img {
@@ -88,6 +98,8 @@ body {
 
 /**** CSS Animations *****/
 
+/***** The sliding effect *****/
+
 .anim.slide-left {
     opacity: 0;
     -moz-transition: all 500ms linear;
@@ -110,6 +122,17 @@ body {
     transform: translate3d(0px, 0px, 0px);
 }
 
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
 /***** MEDIA QUERIES *****/
 
 @media all and (max-width: 576px) {
@@ -117,7 +140,7 @@ body {
         font-size: 2.5rem !important;
     }
     #intro-subtext {
-        font-size: 1.3rem !important;
+        font-size: 1.1rem !important;
     }
     #about-me h1 {
         font-size: 2.5rem;
